@@ -210,6 +210,14 @@ var DropDownMenu = React.createClass({
     );
   },
 
+  getValue: function() {
+    return this.state.value;
+  },
+
+  getSelectedIndex: function() {
+    return this.state.selectedIndex;
+  },
+
   _setWidth: function() {
     var el = React.findDOMNode(this);
     var menuItemsDom = React.findDOMNode(this.refs.menuItems);
